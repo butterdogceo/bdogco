@@ -79,7 +79,7 @@ body {
   box-sizing: border-box;
   overflow-x: hidden;
   margin: 0;
-  width: 100vw;
+  width: 100%;
   min-height: 100vh;
   padding: var(--page-side-padding);
   padding-bottom: var(--page-bottom-padding);
