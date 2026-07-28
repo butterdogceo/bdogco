@@ -1,13 +1,30 @@
 @import url('./global.css');
 
+html {
+  scrollbar-gutter: stable;
+  scrollbar-width: thin;
+}
+
 main {
-  text-shadow: 0 0 12px rgba(0,0,0,0.6);
+  text-shadow: 0 0 12px rgba(0, 0, 0, 0.6);
 
   code {
     font-family: monospace;
     background-color: black;
     outline: black 2px solid;
     border-radius: 2px;
+  }
+
+  a {
+    color: #8686ff;
+    text-decoration: underline;
+  }
+
+  h1,
+  h2,
+  p {
+    width: max-content;
+    max-width: 100%;
   }
 }
 
