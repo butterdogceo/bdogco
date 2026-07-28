@@ -24,8 +24,8 @@ const footer = `<footer id="footer">
     </ul>
     <img src="/img/general/ButterDogCo%20Wide%20Logo.png" alt="ButterDogCo Logo (Wide)" class="logo" loading="lazy" tabindex="0" role="button" aria-label="Funny secret">
     <ul>
-      <li><a href="/pp">Privacy Policy</a></li>
-      <li><a href="/tos">Terms of Use</a></li>
+      <li><a href="/privacy">Privacy</a></li>
+      <li><a href="/terms">Terms</a></li>
     </ul>
   </section>
 </footer>`;
