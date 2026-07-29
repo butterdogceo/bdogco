@@ -4,44 +4,46 @@
 <head>
   <meta charset="UTF-8">
   <title>Custom Roblox Client Skybox Tutorial - ButterDogCo</title>
-  <link rel="apple-touch-icon" sizes="256x256" href="../img/butterdog.png">
-  <link rel="shortcut icon" href="../img/favicon.ico">
-  <link rel="stylesheet" href="../css/document.css">
+  <link rel="apple-touch-icon" sizes="256x256" href="/img/butterdog.png">
+  <link rel="shortcut icon" href="/img/favicon.ico">
+  <link rel="stylesheet" href="/css/document.css">
+  <link rel="canonical" href="https://butterdogco.com/articles/the-only-tutorial-probably">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="mobile-web-app-capable" content="yes">  
   <meta name="keywords" content="butterdogco, roblox, skybox, tutorial, png to tex, custom skybox, roblox tex file">
-  <meta name="description" content="probably the only tutorial on how to make custom Roblox skybox TeX files">
+  <meta name="description" content="How to setup a custom Roblox skybox for the client">
   <script defer src="https://stats.butterdogco.com/script.js" data-website-id="f89d9bc3-6551-4bef-a04d-02e18710fe69" data-do-not-track="true"></script>
   <script src="https://cdn.jsdelivr.net/npm/ios-pwa-splash@1.0.0/cdn.min.js"></script>
-  <script>iosPWASplash('../img/butterdog.png', '#19120d');</script>
+  <script>iosPWASplash('/img/butterdog.png', '#19120d');</script>
 </head>
 
 <body>
   <nav class="top-nav" id="nav">
-    <img src="../img/icons/menu.png" class="mobile-menu-icon open" alt="Open menu icon">
-    <img src="../img/icons/close.png" class="mobile-menu-icon close" alt="Close menu icon">
-    <img src="../img/icons/ButterDog.png" class="logo" id="nav-logo" alt="ButterDog icon" tabindex="0" role="button" aria-label="Funny secret">
+    <img src="/img/icons/menu.png" class="mobile-menu-icon open" alt="Open menu icon">
+    <img src="/img/icons/close.png" class="mobile-menu-icon close" alt="Close menu icon">
+    <img src="/img/icons/ButterDog.png" class="logo" id="nav-logo" alt="ButterDog icon" tabindex="0" role="button" aria-label="Funny secret">
     <div class="seperator"></div>
-    <a href="../">Home</a>
-    <a href="../applications">Apps</a>
-    <a href="../news">News</a>
-    <a href="../about">About</a>
+    <a href="/">Home</a>
+    <a href="/applications">Apps</a>
+    <a href="/news">News</a>
+    <a href="/about">About</a>
   </nav>
   <main>
-    <h1>How to make a custom Roblox skybox for the client</h1>
+    <h1 class="page-title">How to setup a custom Roblox skybox for the client</h1>
     <p>More specifically, converting PNG files into TEX files for use in the Roblox client.</p>
-    <i>Article written by the ButterDogCEO, on August 7th 2025.</i>
+    <i>Written by the ButterDogCEO, on August 7 2025. Last updated on July 29, 2026.</i>
 
-    <h1>Table of Contents</h1>
-    <p><a href="#1" class="hyperlink">1. Getting skybox textures</a></p>
-    <p><a href="#2" class="hyperlink">2. Image resizing</a></p>
-    <p><a href="#3" class="hyperlink">3. Converting to TEX</a></p>
-    <p><a href="#4" class="hyperlink">4. Replacing skybox files</a></p>
-    <p><a href="#5" class="hyperlink">5. Enjoy your custom skybox</a></p>
+    <h2>Table of Contents</h2>
+    <ol>
+      <li><a href="#1" class="hyperlink">Getting skybox textures</a></li>
+      <li><a href="#2" class="hyperlink">Image resizing</a></li>
+      <li><a href="#3" class="hyperlink">Converting to TEX</a></li>
+      <li><a href="#4" class="hyperlink">Replacing skybox files</a></li>
+      <li><a href="#5" class="hyperlink">Enjoy your custom skybox</a></li>
+    </ol>
 
-    <h1 id="1">1. Getting skybox textures</h1>
-    <p>First, you need skybox texture files. You can find these online, I personally found mine on the Roblox toolbox.
-    </p>
+    <h2 id="1">1. Getting skybox textures</h2>
+    <p>First, you need skybox texture files. You can find these online, I personally found mine on the Roblox toolbox.</p>
     <p>You will need textures for the following directions:</p>
     <ul>
       <li>back</li>
@@ -52,13 +54,13 @@
       <li>up</li>
     </ul>
 
-    <h1 id="2">2. Image resizing</h1>
+    <h2 id="2">2. Image resizing</h2>
     <p>All skybox textures need to be 512x512 pixels in size. If you need to resize all your images, I personally found
       the following website to be useful: <a class="hyperlink"
         href="https://bulkresizephotos.com/en?type=exact&width=512&height=512&pad=false&format=png">https://bulkresizephotos.com/</a>
     </p>
 
-    <h1 id="3">3. Converting to TEX</h1>
+    <h2 id="3">3. Converting to TEX</h2>
     <ul>
       <li>For every skybox texture file, you will need to convert it to the DDS file format, with BC1/DXT1 compression.
         I personally did this using GIMP.</li>
@@ -75,7 +77,7 @@
       <p>Note 2: Roblox's TEX file format is NOT the same as LaTeX.</p>
     </ul>
 
-    <h1 id="4">4. Replacing skybox files</h1>
+    <h2 id="4">4. Replacing skybox files</h2>
     <p>Now that you have the skybox textures in the correct format, you can replace the default skybox textures in
       Roblox.</p>
     <p>To do this, there are a few common methods:</p>
@@ -114,15 +116,55 @@
       </li>
     </ul>
 
-    <h1 id="5">5. Enjoy your custom skybox</h1>
+    <h2 id="5">5. Enjoy your custom skybox</h2>
     <p>Once you've replaced the skybox textures, you can launch Roblox and enjoy your custom skybox in any game that
       uses the default skybox textures.</p>
     <p>If you encounter any issues, double-check the steps above, ensure your textures are correctly formatted, and that
       you've replaced the files in the correct directory.</p>
-    <p>Note: This tutorial is based on the current state of Roblox and may change in the future. Always refer to the
+    <p>Note: This tutorial is based on the current state of Roblox and may change in the future. Refer to the
       latest documentation or community resources for updates.</p>
+
+    <aside class="rating" id="rating-container">
+      <p class="in-progress">How helpful was this article?</p>
+
+      <ul class="in-progress" id="rating-buttons">
+        <li>
+          <button data-umami-event="skybox-feedback-rating" data-umami-event-rating="1" title="Rate 1/5">
+            <img src="/img/icons/Rating_1.png" alt="Rating level 1" style="filter:hue-rotate(150deg)">
+          </button>
+        </li>
+        <li>
+          <button data-umami-event="skybox-feedback-rating" data-umami-event-rating="2" title="Rate 2/5">
+            <img src="/img/icons/Rating_2.png" alt="Rating level 2" style="filter:hue-rotate(180deg)">
+          </button>
+        </li>
+        <li>
+          <button data-umami-event="skybox-feedback-rating" data-umami-event-rating="3" title="Rate 3/5">
+            <img src="/img/icons/Rating_3.png" alt="Rating level 3" style="filter:hue-rotate(200deg)">
+          </button>
+        </li>
+        <li>
+          <button data-umami-event="skybox-feedback-rating" data-umami-event-rating="4" title="Rate 4/5">
+            <img src="/img/icons/Rating_4.png" alt="Rating level 4" style="filter:hue-rotate(240deg)">
+          </button>
+        </li>
+        <li>
+          <button data-umami-event="skybox-feedback-rating" data-umami-event-rating="5" title="Rate 5/5">
+            <img src="/img/icons/Rating_5.png" alt="Rating level 5" style="filter:hue-rotate(300deg)">
+          </button>
+        </li>
+      </ul>
+
+      <p class="rating-completed" id="feedback-label">Thank you for your feedback!</p>
+      <form class="rating-completed feedback-form" action="#" method="post" id="feedback-form" data-article="skybox">
+        <input type="text" class="rating-comment" placeholder="Leave a comment (optional)" id="feedback-comment" name="comment">
+        <button class="rating-submit">Submit</button>
+      </form>
+    </aside>
   </main>
-  <script src="../js/main.js"></script>
+
+  <script src="/js/main.js"></script>
+  <script src="/js/article.js"></script>
 </body>
 
 </html>

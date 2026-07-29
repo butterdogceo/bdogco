@@ -13,6 +13,7 @@ main {
     background-color: black;
     outline: black 2px solid;
     border-radius: 2px;
+    word-break: break-word;
   }
 
   a {
@@ -26,8 +27,119 @@ main {
     width: max-content;
     max-width: 100%;
   }
+
+  aside {
+    background-color: rgba(230, 230, 240, 0.1);
+    border: var(--nav-outline-thickness) solid rgba(255, 255, 255, 0.1);
+    padding: var(--object-padding);
+    border-radius: var(--object-border-radius);
+    backdrop-filter: blur(12px) brightness(90%);
+    -webkit-backdrop-filter: blur(12px) brightness(90%);
+    width: 300px;
+    max-width: 100%;
+
+    p:not(:last-child) {
+      margin: 0 0 var(--object-padding) 0;
+    }
+
+    &.rating {
+      form:disabled,
+      button:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+      }
+
+      ul {
+        position: relative;
+        display: flex;
+        flex-flow: row nowrap;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        border: var(--nav-outline-thickness) solid rgba(255, 255, 255, 0.1);
+        border-radius: var(--halved-object-border-radius);
+        background-color: rgba(230, 230, 240, 0.1);
+        overflow: hidden;
+
+        li {
+          display: flex;
+          aspect-ratio: 1 / 1;
+
+          button {
+            background: none;
+            border: none;
+            cursor: pointer;
+            transition: 0.2s ease;
+
+            img {
+              height: 100%;
+              width: 100%;
+              object-fit: contain;
+            }
+
+            &:hover,
+            &:focus {
+              background-color: rgba(255, 255, 255, 0.1);
+            }
+          }
+
+          &:not(:last-child) {
+            border-right: var(--nav-outline-thickness) solid rgba(255, 255, 255, 0.1);
+          }
+        }
+      }
+
+      .feedback-form {
+        display: flex;
+        flex-flow: row nowrap;
+        gap: var(--halved-object-padding);
+
+        input,
+        button {
+          background-color: rgba(230, 230, 240, 0.1);
+          border: var(--nav-outline-thickness) solid rgba(255, 255, 255, 0.1);
+          border-radius: var(--halved-object-border-radius);
+          padding: var(--halved-object-padding);
+          color: white;
+          transition: 0.2s ease;
+
+          &:hover,
+          &:focus {
+            background-color: rgba(255, 255, 255, 0.2);
+          }
+        }
+
+        input {
+          flex: 1;
+          min-width: 0;
+        }
+
+        button {
+          cursor: pointer;
+        }
+      }
+
+      &:not(.completed) .rating-completed,
+      &.completed .in-progress,
+      &.comment-submitted .feedback-form {
+        display: none;
+      }
+
+      &.comment-submitted p {
+        margin: 0;
+      }
+    }
+  }
 }
 
 pre {
   white-space: pre-wrap;
+}
+
+@media (max-width: 400px) {
+  main {
+    aside {
+      width: unset;
+    }
+  }
 }

@@ -13,7 +13,9 @@
   --shadow-medium: 0 0 10px rgba(0, 0, 0, 0.3);
 
   --object-padding: 18px;
+  --halved-object-padding: calc(var(--object-padding) / 2);
   --object-border-radius: 30px;
+  --halved-object-border-radius: calc(var(--object-border-radius) / 2);
 
   --text-link-color: #9292ff;
 
@@ -114,6 +116,7 @@ a {
   padding-left: 14px;
   border-left: 4px solid #ffffff88;
   text-align: left;
+  max-width: calc(100vw - (var(--page-side-padding) * 2) - 4px - 14px);
 }
 
 .hyperlink {
